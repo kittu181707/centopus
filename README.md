@@ -50,7 +50,7 @@ Centopus does not replace QA engineers or real user research. It automates repet
 
 ## The Problem
 
-Testing the same flow with many different kinds of users is repetitive and slow. Every iteration can mean recruiting participants, scheduling sessions, running them, collecting feedback and analysing it - before the next build starts the cycle again. Teams often ship on a handful of opinions, or postpone the test until a real cohort is available.
+Testing the same flow with many different kinds of users is repetitive and slow. Every iteration can mean recruiting participants, scheduling sessions, running them, collecting feedback and analyzing it - before the next build starts the cycle again. Teams often ship on a handful of opinions, or postpone the test until a real cohort is available.
 
 Existing tools answer different questions. QA answers *'does it work?'*, analytics answers *'where did users drop off?'*, and human research answers *'why did this person struggle?'*. Centopus adds a cheaper, repeatable layer before those: **what happens when many different kinds of users actually try this flow?** - so real research time goes to the questions that genuinely need people.
 
@@ -180,7 +180,12 @@ The web app runs at http://127.0.0.1:5173.
 ### Try it locally without AWS
 
 ```bash
+# Terminal 1
 npm run dev:demo   # serves the authorized practice target (Fieldwork) on http://127.0.0.1:4174
+```
+
+```bash
+# Terminal 2
 npm run l1:run     # one synthetic user against it, in a real local browser
 ```
 
